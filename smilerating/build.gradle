@@ -3,12 +3,6 @@ plugins {
     id 'maven-publish'
 }
 
-ext {
-    PUBLISH_GROUP_ID = 'com.github.sujithkanna'
-    PUBLISH_ARTIFACT_ID = 'smileyrating'
-    PUBLISH_VERSION = '2.0.0'
-}
-
 android {
     compileSdkVersion 31
 
@@ -16,7 +10,7 @@ android {
         minSdkVersion 21
         targetSdkVersion 31
         versionCode 1
-        versionName PUBLISH_VERSION
+        versionName "1.0"
     }
     lintOptions {
         abortOnError false
@@ -42,7 +36,7 @@ afterEvaluate {
             release(MavenPublication){
                 groupId = 'com.github.onmarkets'
                 artifactId = 'smileyrating'
-                version = '1.0.0'
+                version = '1.0.1'
             }
         }
     }
