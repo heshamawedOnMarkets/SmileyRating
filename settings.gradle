@@ -1,1 +1,1 @@
-include ':smilerating'
+include ':app', ':smilerating'
