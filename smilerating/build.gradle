@@ -3,14 +3,17 @@ plugins {
     id 'maven-publish'
 }
 
+group = 'com.github.heshamawedOnMarkets'
+version = '1.7'
+
 android {
     compileSdkVersion 31
 
     defaultConfig {
         minSdkVersion 21
         targetSdkVersion 31
-        versionCode 3
-        versionName "1.6"
+        versionCode 4
+        versionName "1.7"
     }
     buildTypes {
         release {
@@ -43,9 +46,9 @@ afterEvaluate {
         publications{
             release(MavenPublication){
                 from components.release
-                groupId = 'com.github.onmarkets'
+                groupId = 'com.github.heshamawedOnMarkets'
                 artifactId = 'smileyrating'
-                version = '1.6'
+                version = '1.7'
             }
         }
     }
